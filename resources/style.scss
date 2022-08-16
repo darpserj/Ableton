@@ -1,0 +1,109 @@
+/* 
+
+CSS RESET BY Josh W Comeau
+_________________________________________________
+https://www.joshwcomeau.com/css/custom-css-reset/ 
+
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: futura-pt, sans-serif;
+    font-size: 16px;
+    ;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* ----------- */
+  /* Utilites */
+  /* --------- */
+
+  :root{
+    --dark-blue: #0000ff;
+    --light-blue: #b1c5ff;
+    --purple: #d5b3ff;
+    --orange: #ff764d;
+    --green: #b6ffc0;
+    --yellow: #fbffa7;
+  }
+
+  .color-orange{color: var(--orange)}
+  .color-dark-blue{color: var(--dark-blue)}
+
+  .bg-yellow{background-color: var(--yellow);}
+  .bg-purple{background-color: var(--purple);}
+  .bg-green{background-color: var(--green);}
+  .bg-light-blue{background-color: var(--light-blue);}
+  .bg-dark-blue{background-color: var(--dark-blue);}
+
+  .fw-light{font-weight: 300;}
+  .fw-bold{font-weight: 500;}
+
+  /* ----------- */
+  /* CSS Goodies */
+  /* --------- */
+
+.container{
+/*     max-width: 100rem;
+ */}
+.main{}
+  .section{}
+    .logo-container{
+      position: relative;
+    }
+    .logo-container h1{
+      position: absolute;
+      left: 20%;
+      transform: translateY(-150%);
+    }
+    .MainHeader{font-size: 4rem;}
+    .header{
+        padding: 0 1rem;
+        margin: 1rem;
+        font-size: 1.25rem;
+    }
+      .header a{
+        display: inline-block;
+        font-size: 1.25rem;
+        color: var(--dark-blue);
+        text-decoration: none;
+      }
+
+    .paragraph{
+        padding: 0 1rem;
+        margin: 1rem;
+        font-size: 1rem;
+
+    }
+
+    iframe{
+      width: 100%;
+    }
