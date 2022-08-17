@@ -26,7 +26,7 @@ https://www.joshwcomeau.com/css/custom-css-reset/
   }
 
   img, picture, video, canvas, svg {
-    display: block;
+    display: inline-block;
     max-width: 100%;
   }
 
@@ -75,19 +75,112 @@ https://www.joshwcomeau.com/css/custom-css-reset/
 /*     max-width: 100rem;
  */}
 .main{}
-  .section{}
+  .section{
+    margin-bottom: 8vw;
+  }
+
+    /* HEADER CSS */
+
     .logo-container{
       position: relative;
+      margin: 8.33vw;
     }
     .logo-container h1{
       position: absolute;
-      left: 20%;
-      transform: translateY(-150%);
+      top: calc(50% - 4rem);
+      left: calc(50% - 6.28rem);
+      font-size: 4rem;
     }
-    .MainHeader{font-size: 4rem;}
+    .logo-container img{
+      width: auto;
+      min-height: calc(100vh - 120px);
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    /* Images & Videos */
+
+    .photo-container{
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 16vw 8vw;
+      }
+    .image{
+      vertical-align: middle;
+    }
+    .photo-1{
+      width: 41.66vw;
+      height: 41.66vw;
+    }
+    .photo-2{
+      width: 33vw;
+      height: 25vw;
+/*       margin-left: 8.33vw;
+ */    }
+    .yellow{
+      position: absolute;
+      top: -10vw;
+      right: -8vw;
+      z-index: -1;
+      width: 58.3vw;
+      height: 58.3vw;
+      background-color: var(--yellow);
+    }
+
+    iframe{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .green{
+      position: absolute;
+      top: -8vw;
+      left: -10vw;
+      z-index: -1;
+      width: 58.3vw;
+      height: 78.3vw;
+      background-color: var(--green);
+    }
+    .photo-3{
+      width: 33vw;
+      height: 25vw;
+    }
+    .photo-4{
+      width: 33vw;
+      height: 25vw;
+      margin-top: 8.33vw;
+    }
+    .photo-5{
+      width: 41.66vw;
+      height: 41.66vw;
+    }
+
+    .photo-6a{
+      width: 33vw;
+      height: 25vw;
+      margin-right: 8.33vw;
+    }
+    .photo-7{
+      width: 41.66vw;
+      height: 41.66vw;
+      margin-left: 8.33vw;
+    }
+    .purple{
+      position: absolute;
+      top: -8vw;
+      left: 8vw;
+      z-index: -1;
+      width: 68.3vw;
+      height: 58.3vw;
+      background-color: var(--purple);
+    }
+    /* Headings & Paragraphs */
+
     .header{
-        padding: 0 1rem;
-        margin: 1rem;
+        padding: 0 4vw;
+        margin: 8vw 4vw 6vw 4vw;
         font-size: 1.25rem;
     }
       .header a{
@@ -103,7 +196,28 @@ https://www.joshwcomeau.com/css/custom-css-reset/
         font-size: 1rem;
 
     }
-
-    iframe{
-      width: 100%;
+    .jobs{
+      padding: 0 4vw;
+      margin: 8vw 4vw 6vw 4vw ;
     }
+    .jobs img{
+      display: block;
+    }
+    .cta{
+      display: flex;
+      flex-direction: column;
+      padding: 8vw ;
+      background-color: var(--light-blue);
+    }
+
+    .cta-text{
+      margin-bottom: 8.33vw;
+      font-size: 1.25rem;
+    }
+    .cta-link{
+      font-size: 1.25rem;
+    }
+
+
+
+  
