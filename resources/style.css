@@ -22,6 +22,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #eee;
 }
 
 img, picture, video, canvas, svg {
@@ -92,11 +93,6 @@ p, h1, h2, h3, h4, h5, h6 {
 /* ----------- */
 /* CSS Goodies */
 /* --------- */
-.container {
-  /*     max-width: 100rem;
-   */
-}
-
 .section {
   margin-bottom: 8vw;
 }
@@ -196,7 +192,7 @@ iframe {
 .photo-7 {
   width: 41.66vw;
   height: 41.66vw;
-  margin-left: 8.33vw;
+  margin-left: 7.33vw;
 }
 
 .purple {
@@ -210,10 +206,25 @@ iframe {
 }
 
 /* Headings & Paragraphs */
-.header {
+.header, .paragraph {
   padding: 0 4vw;
-  margin: 8vw 4vw 6vw 4vw;
+  margin: 8vw 4vw 1rem 4vw;
   font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .header, .paragraph {
+    width: 66.66vw;
+    padding: 0;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .header, .paragraph {
+    width: 50vw;
+    font-size: 1.875rem;
+  }
 }
 
 .header a {
@@ -222,20 +233,49 @@ iframe {
   color: var(--dark-blue);
   text-decoration: none;
 }
+@media (min-width: 1280px) {
+  .header a {
+    font-size: 1.875rem;
+  }
+}
 
 .paragraph {
-  padding: 0 1rem;
-  margin: 1rem;
-  font-size: 1rem;
+  padding: 0 4vw;
+  margin: 4vw 4vw 1rem 4vw;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .paragraph {
+    width: 66.66vw;
+    padding: 0;
+    margin: 0 auto 1rem auto;
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph {
+    width: 50vw;
+    font-size: 1.25rem;
+  }
 }
 
 .jobs {
   padding: 0 4vw;
   margin: 8vw 4vw 6vw 4vw;
 }
+@media (min-width: 1280px) {
+  .jobs {
+    display: flex;
+  }
+}
 
 .jobs img {
   display: block;
+  min-width: 100%;
+}
+@media (min-width: 1280px) {
+  .jobs img {
+    min-width: auto;
+  }
 }
 
 .cta {
@@ -249,7 +289,43 @@ iframe {
   margin-bottom: 8.33vw;
   font-size: 1.25rem;
 }
+@media (min-width: 768px) {
+  .cta-text {
+    margin-bottom: 1rem;
+  }
+}
 
 .cta-link {
   font-size: 1.25rem;
+}
+
+.list {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.l1-social {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.facebook {
+  background-color: #3477F2;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.youtube {
+  background-color: #FF001D;
+}
+
+.instagram {
+  background-color: #F77737;
 }/*# sourceMappingURL=style.css.map */
