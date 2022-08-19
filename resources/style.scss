@@ -250,20 +250,99 @@ https://www.joshwcomeau.com/css/custom-css-reset/
       font-size: 1.25rem;
     }
 
-    .footer{}
-    .newsletter{}
+    .footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      grid-auto-flow: row dense;
+      gap: 2rem;
+      margin: 2rem;
+      @media (min-width:1000px) {
+        gap: 1rem;
+        padding: 8.33vw;
+      }
+    }
       .footer-heading{}
       .footer-paragraph{}
-      .news-form{}
-        .news-form-input{}
-        .news-form-button{}
+
       .list{
         display: block;
         padding: 0;
         margin: 0;
         list-style-type: none;
       }
-      .list1{}
+      .list-item{}
+        .footer__link{
+          color: #000;
+          text-decoration: none;
+          &:hover{color: var(--orange);}
+        }
+          .footer__link-has-arrow::after{
+            content: '\00a0›';
+          }
+
+          /************* NEWSLETTER  ****************/
+          @media (min-width:1000px) {
+
+            .footer-newsletter{
+              grid-row: 1/2;
+              grid-column: 3/4;
+            }
+
+            .news-form{}
+              .news-form-input{}
+              .news-form-button{}
+          /************* EDUCATION  ****************/
+
+            .footer-education{
+              grid-row: 1/2;
+              grid-column: 2/3;
+            }
+          }
+          /************* REGISTER & SOCIALS  ****************/
+
+          .footer ul{
+            grid-row: 1/2;
+            grid-column: 1/2;
+          }
+
+          /********* FOOTER BOTTOM LINKS *********/
+
+
+          .footer_bottom-links{
+            @media (min-width: 740px) {
+              grid-column: 1/3;
+            }
+            @media (min-width: 930px) {
+              grid-column: 1/4;
+            }
+          }
+
+          .footer_bottom-links ul li:nth-child(-n+6){
+            @media (max-width:880px){
+              flex-basis: min-content;
+        }
+          }
+            .footer_bottom-links ul {
+              @media (min-width:740px) {
+                display: flex;
+/*                 flex-wrap: wrap;
+ */                gap: 1rem;
+                
+              }
+            }
+
+          .footer_bottom-links ul .list-item:nth-child(7) { 
+            display: flex; 
+            gap: 1rem; 
+            align-items: center;
+            margin-top: 2rem;
+            @media (min-width:740px) {
+              margin-top: 0;
+              margin-left: auto;
+            }
+          }
+
+       .list1{}
         .l1-item{}
           .l1-link{}
           .l1-social{
